@@ -30,6 +30,5 @@ For bug reports, please provide your DocCourier NX version, browser, and reprodu
 
 ---
 
-**Entwickler / Developer:** M. Kuba  
-**Website:** https://tools.kubapur.de/  
+**Entwickler / Developer:** M. Kuba   
 © 2026 M. Kuba – DocCourier NX
