@@ -1,0 +1,37 @@
+name: "💡 Verbesserung / Feature request"
+description: "Ideen und Funktionswünsche / Suggest improvements and features"
+title: "[Feature] "
+labels: ["enhancement", "needs-review"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "Art des Vorschlags / Type of request"
+      options:
+        - Neue Funktion / New feature
+        - Bestehende Funktion verbessern / Improve existing feature
+        - Oberfläche / User interface
+        - Sonstiges / Other
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: "Dein Vorschlag / Your suggestion"
+      description: "Was soll DocCourier NX künftig können? / What should DocCourier NX do?"
+    validations:
+      required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: "Wofür wäre das nützlich? / Why is this useful?"
+      description: "Bitte beschreibe ein konkretes Anwendungsbeispiel. / Describe a specific use case."
+    validations:
+      required: true
+  - type: textarea
+    id: extras
+    attributes:
+      label: "Weitere Details / Additional details"
+      description: "Optional, keine vertraulichen Dokumente hochladen / Optional, do not upload confidential documents"
+    validations:
+      required: false
