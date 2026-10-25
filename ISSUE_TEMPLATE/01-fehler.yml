@@ -1,0 +1,67 @@
+name: "🐛 Fehler melden / Report a bug"
+description: "Fehler in DocCourier NX melden / Report a DocCourier NX bug"
+title: "[Bug] "
+labels: ["bug", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für deine Meldung! / Thank you for reporting.
+        **Bitte keine vertraulichen Dokumente, Zugangsdaten oder personenbezogenen Inhalte hochladen. / Do not upload confidential documents, credentials, or personal data.**
+  - type: input
+    id: version
+    attributes:
+      label: "DocCourier NX-Version / Extension version"
+      placeholder: "z. B. 1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: "Browser / Browser"
+      options:
+        - Google Chrome
+        - Microsoft Edge
+        - Mozilla Firefox
+        - Anderer / Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Fehlerbeschreibung / What went wrong?"
+      description: "Was ist passiert, was hast du erwartet? / What happened and what did you expect?"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Schritte zum Nachstellen / Steps to reproduce"
+      placeholder: "1. …\n2. …\n3. …"
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: "Häufigkeit / Frequency"
+      options:
+        - Immer / Always
+        - Manchmal / Sometimes
+        - Einmalig / Once
+        - Unbekannt / Unknown
+    validations:
+      required: true
+  - type: textarea
+    id: extras
+    attributes:
+      label: "Zusätzliche Hinweise / Additional details"
+      description: "Optional: geschwärzte Screenshots oder Fehlermeldungen / Optional: redacted screenshots or error messages"
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: "Datenschutz / Privacy"
+      options:
+        - label: "Ich habe vertrauliche Angaben entfernt. / I have removed sensitive information."
+          required: true
